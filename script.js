@@ -7,5 +7,3 @@ window.addEventListener("scroll", function () {
     linkVoltarAoTopo.style.display = "none";
   }
 });
-
-document.title = "Dev Guilherme"

@@ -6,58 +6,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <title style="display: none;">Dev Guilherme</title>
 </head>
 
 <body>
-  <header class="title" id="topo">
+  <div class="header">
     <span>Guilherme Senci</span>
-    <h2>Front-end Developer</h2>
-  </header>
-
-  <nav class="navbar_about">
-    <ul class="nav_itens">
-      <li><a href="#sobre">About me</a></li>
-      <li><a href="#projetos">Projects</a></li>
-      <li><a href="#contato">Contact</a></li>
-    </ul>
-  </nav>
-  <section id="sobre">
-    <h2>Bio</h2>
-    <p>
-      I'm a passionate front-end developer with over 4 years of experience in
-      the field. Throughout my career, I have honed my skills in various
-      areas, including Redux state management, user interface design, API
-      consumption, responsive layout development, and building web
-      applications, particularly single-page applications (SPAs) and software
-      as a service (SaaS) solutions.
-    </p>
-    <p>
-      My journey in web development began as a self-taught enthusiast, and I
-      have continued to expand my knowledge and expertise in this
-      ever-evolving field. Currently, I'm in the final year of my academic
-      journey, pursuing a degree in Systems Analysis and Development that
-      complements my practical experience. This program has provided me with a
-      deeper understanding of software architecture, data management, and the
-      systematic approach to building robust web applications.
-    </p>
-    <p>
-      One of my notable achievements includes working on applications for the
-      banking industry, where I gained valuable insights into security, data
-      handling, and creating seamless user experiences. These experiences have
-      not only deepened my technical skills but have also fostered a strong
-      commitment to delivering solutions that meet both user needs and
-      industry standards.
-    </p>
-    <p>
-      I am dedicated to creating elegant, responsive, and user-centric web
-      applications that provide a delightful experience for users. I am always
-      eager to embrace new technologies and stay updated with the latest
-      trends in the world of front-end development. Let's connect and discuss
-      how I can contribute to your next exciting project.
-    </p>
+    <nav class="navbar_about">
+      <ul class="nav_itens">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar_about">
+      <ul class="nav_itens">
+        <li>
+          <img src="./assets/icons-github.png" alt="icone github" class="icon" />
+        </li>
+        <li>
+          <img src="./assets/icons-linkedin.png" alt="icone github" class="icon" />
+        </li>
+        <li>
+          <img src="./assets/icons-instagram.png" alt="icone github" class="icon" />
+        </li>
+        <li>
+          <img src="./assets/icons-gmall.png" alt="icone github" class="icon" />
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section id="about" class="bio">
+    <img src="./assets/guilhermesenci.jpeg" alt="developer Guilherme Senci" class="pic_guilherme" />
+    <div>
+      <header class="title" id="topo">
+        <span>Guilherme Senci</span>
+        <h2>Front-end Developer</h2>
+      </header>
+      <p>
+        I'm a passionate front-end developer with over 4 years of experience in
+        the field. Throughout my career, I have honed my skills in various
+        areas, including Redux state management, user interface design, API
+        consumption, responsive layout development, and building web
+        applications, particularly single-page applications (SPAs) and software
+        as a service (SaaS) solutions.
+      </p>
+      <p>
+        My journey in web development began as a self-taught enthusiast, and I
+        have continued to expand my knowledge and expertise in this
+        ever-evolving field. Currently, I'm in the final year of my academic
+        journey, pursuing a degree in Systems Analysis and Development that
+        complements my practical experience. This program has provided me with a
+        deeper understanding of software architecture, data management, and the
+        systematic approach to building robust web applications.
+      </p>
+      <!-- <p>
+        One of my notable achievements includes working on applications for the
+        banking industry, where I gained valuable insights into security, data
+        handling, and creating seamless user experiences. These experiences have
+        not only deepened my technical skills but have also fostered a strong
+        commitment to delivering solutions that meet both user needs and
+        industry standards.
+      </p> -->
+      <!-- <p>
+        I am dedicated to creating elegant, responsive, and user-centric web
+        applications that provide a delightful experience for users. I am always
+        eager to embrace new technologies and stay updated with the latest
+        trends in the world of front-end development. Let's connect and discuss
+        how I can contribute to your next exciting project.
+      </p> -->
+    </div>
   </section>
 
-  <section id="projetos" class="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
     <nav class="navbar_about">
       <ul class="nav_itens">
@@ -103,28 +124,34 @@
 
       <section>
         <h2>Project Overview:</h2>
-        <img src="./assets/talkproccess_pka.png" alt="home page image" width="300" height="" />
-        <p>
-          The "TalkProgress" is a dynamic platform designed to streamline
-          internal processes, training programs, and employee management for external companies. The project combines
-          completed and ongoing efforts, featuring a range of enhancements and new features. My role as a front-end
-          developer involved implementing improvements such as knowledge tests and virtual training modules. The tech
-          stack includes Backbone, CoffeeScript, React, Redux, with a MySQL-powered backend, and seamless integration
-          with a mobile environment built in Flutter. I also played a crucial role in developing web pages for new
-          company products.
-        </p>
+        <div class="img_left">
+          <img src="./assets/talkproccess_pka.png" alt="home page image" class="img-normal" />
+          <p>
+            The "TalkProgress" is a dynamic platform designed to streamline
+            internal processes, training programs, and employee management for external companies. The project combines
+            completed and ongoing efforts, featuring a range of enhancements and new features. My role as a front-end
+            developer involved implementing improvements such as knowledge tests and virtual training modules. The tech
+            stack includes Backbone, CoffeeScript, React, Redux, with a MySQL-powered backend, and seamless integration
+            with a mobile environment built in Flutter. I also played a crucial role in developing web pages for new
+            company products.
+          </p>
+        </div>
       </section>
 
       <section>
         <h2>Project Status:</h2>
-        <img src="./assets/talkproccess_mobile.png" alt="home page image" width="300" height="" />
-        <p>
-          The project is a combination of completed and ongoing tasks. Many enhancements and features have been
-          successfully integrated, including knowledge tests and virtual training modules. Additionally, the integration
-          with the Flutter-based mobile environment has been achieved, enhancing accessibility and user experience. The
-          project is ongoing as we continue to refine existing functionalities and explore opportunities for further
-          improvement.
-        </p>
+        <div class="img_right">
+          <img src="./assets/talkproccess_mobile.png" alt="home page image" class="img-normal" />
+          <p>
+            The project is a combination of completed and ongoing tasks. Many enhancements and features have been
+            successfully integrated, including knowledge tests and virtual training modules. Additionally, the
+            integration
+            with the Flutter-based mobile environment has been achieved, enhancing accessibility and user experience.
+            The
+            project is ongoing as we continue to refine existing functionalities and explore opportunities for further
+            improvement.
+          </p>
+        </div>
       </section>
     </div>
     <div class="rick_morty" id="rick_morty">
@@ -147,81 +174,97 @@
           </section>
           <section>
             <h2>Features:</h2>
-            <ol>
+            <ol class="space">
               <li>
                 <h4>Homehpage - All Characters:</h4>
-                <img src="./assets/rick_morty.png" alt="home image" width="300" height="" />
-                <p>
-                  The homepage displays a list of all characters from the "Rick and Morty" series.
-                  Data is fetched asynchronously from the API.
-                  Pagination allows users to navigate through a large number of characters.
-                  A search bar enables users to search for specific characters by name or other attributes.
-                </p>
+                <div class="img_left">
+                  <img src="./assets/rick_morty.png" alt="home image" class="img-normal" />
+                  <p>
+                    The homepage displays a list of all characters from the "Rick and Morty" series.
+                    Data is fetched asynchronously from the API.
+                    Pagination allows users to navigate through a large number of characters.
+                    A search bar enables users to search for specific characters by name or other attributes.
+                  </p>
+                </div>
               </li>
               <li>
                 <h4>Episodes Page:</h4>
-                <img src="./assets/rick_morty5.png" alt="characters image" width="300" height="" />
-                <p>
-                  A dedicated page lists all episodes of the series.
-                  Data is retrieved from the API and paginated for easy navigation.
-                  Users can click on an episode to view detailed information.
-                </p>
+                <div class="img_right">
+                  <img src="./assets/rick_morty5.png" alt="characters image" class="img-normal" />
+                  <p>
+                    A dedicated page lists all episodes of the series.
+                    Data is retrieved from the API and paginated for easy navigation.
+                    Users can click on an episode to view detailed information.
+                  </p>
+                </div>
               </li>
               <li>
-                <h4> Worlds Page: </h4>
-                <img src="./assets/rick_morty4.png" alt="locations image" width="300" height="" />
-                <p>
-                  Another page provides a comprehensive list of all the worlds featured in the series.
-                  Users can click on a world to access more detailed information.
-                  Similar to other sections, data is fetched asynchronously and paginated.
-                </p>
+                <div class="img_left">
+                  <img src="./assets/rick_morty4.png" alt="locations image" class="img-normal" />
+                  <div>
+                    <h4> Worlds Page: </h4>
+                    <p>
+                      Another page provides a comprehensive list of all the worlds featured in the series.
+                      Users can click on a world to access more detailed information.
+                      Similar to other sections, data is fetched asynchronously and paginated.
+                    </p>
+                  </div>
+                </div>
               </li>
             </ol>
             <h2>UX Challenges and Solutions:</h2>
             <ol>
               <li>
                 <p>Navigation and Linking:</p>
-                <img src="./assets/rick_morty3.png" alt="locations image" width="300" height="" />
-                <p>
-                  Ensuring seamless navigation between different sections (characters, episodes, worlds) posed a UX
-                  challenge.
-                  Solution: Implementing clear and intuitive navigation menus and providing links between related
-                  content,
-                  making
-                  it easy for users to explore interconnected data.
-                </p>
+                <div class="img_right">
+                  <img src="./assets/rick_morty3.png" alt="locations image" class="img-normal" />
+                  <p>
+                    Ensuring seamless navigation between different sections (characters, episodes, worlds) posed a UX
+                    challenge.
+                    Solution: Implementing clear and intuitive navigation menus and providing links between related
+                    content,
+                    making
+                    it easy for users to explore interconnected data.
+                  </p>
+                </div>
               </li>
               <li>
                 <p>Data Loading and Performance:</p>
-                <img src="./assets/rick_morty6.png" alt="locations image" width="300" height="" />
-                <p>
-                  Fetching and rendering data from a third-party API asynchronously while maintaining a smooth user
-                  experience
-                  required careful optimization.
-                  Solution: Implementing loading screens and optimizing API requests to minimize data loading times,
-                  ensuring
-                  a
-                  responsive user interface.
-                </p>
+                <div class="img_left">
+                  <img src="./assets/rick_morty6.png" alt="locations image" class="img-normal" />
+                  <p>
+                    Fetching and rendering data from a third-party API asynchronously while maintaining a smooth user
+                    experience
+                    required careful optimization.
+                    Solution: Implementing loading screens and optimizing API requests to minimize data loading times,
+                    ensuring
+                    a
+                    responsive user interface.
+                  </p>
+                </div>
               </li>
               <li>
                 <p>Search Functionality:</p>
-                <img src="./assets/rick_morty2.png" alt="locations image" width="300" height="" />
-                <p>
-                  Implementing an efficient search feature across multiple sections (characters, episodes, worlds) was
-                  essential.
-                  Solution: Creating a unified search bar that provides real-time search results as users type, enabling
-                  quick
-                  access to specific content.
-                </p>
+                <div class="img_right">
+                  <img src="./assets/rick_morty2.png" alt="locations image" class="img-normal" />
+                  <p class="txt-box">
+                    Implementing an efficient search feature across multiple sections (characters, episodes, worlds) was
+                    essential.
+                    Solution: Creating a unified search bar that provides real-time search results as users type,
+                    enabling
+                    quick
+                    access to specific content.
+                  </p>
+                </div>
+
               </li>
           </section>
 
           <section>
             <h4>Conclusion:</h4>
             <div class="img_left">
-              <img src="./assets/rick_morty_mobile.png" alt="locations image" width="300" height="" />
-              <img src="./assets/rick_morty_mobile2.png" alt="locations image" width="300" height="" />
+              <img src="./assets/rick_morty_mobile.png" alt="locations image" class="img-small img-normal" />
+              <img src="./assets/rick_morty_mobile2.png" alt="locations image" class="img-small img-normal" />
               <p>
                 The "Rick and Morty Explorer" is an interactive React-based web application that successfully overcomes
                 various
@@ -306,41 +349,57 @@
             <ol>
               <li>
                 <p><strong>User Registration:</strong></p>
-                <img src="./assets/meus_ingressos_signin.png" alt="home page image" width="300" height="" />
-                <p>Users register on the platform, providing personal and payment information.</p>
+                <div class="img_right">
+
+                  <img src="./assets/meus_ingressos_signin.png" alt="home page image" class="img-normal" />
+                  <p>Users register on the platform, providing personal and payment information.</p>
+                </div>
               </li>
               <li>
                 <p><strong>Event Navigation:</strong></p>
-                <img src="./assets/meus_ingressos_home.png" alt="home page image" width="300" height="" />
-                <p>
-                  Users explore the list of available events, filtering by category, date, location, and other criteria.
-                </p>
+                <div class="img_left">
+                  <img src="./assets/meus_ingressos_home.png" alt="home page image" class="img-normal" />
+                  <p>
+                    Users explore the list of available events, filtering by category, date, location, and other
+                    criteria.
+                  </p>
+                </div>
               </li>
               <li>
                 <p><strong>Event Details</strong></p>
-                <img src="./assets/meus_ingressos_event_info.png" alt="home page image" width="300" height="" />
-                <p>
-                  When clicking on an event, users access a detailed page with event information, including date, time,
-                  location, artists or attractions, and ticket prices.
-                </p>
+                <div class="img_right">
+                  <img src="./assets/meus_ingressos_event_info.png" alt="home page image" class="img-normal" />
+                  <p>
+                    When clicking on an event, users access a detailed page with event information, including date,
+                    time,
+                    location, artists or attractions, and ticket prices.
+                  </p>
+                </div>
               </li>
               <li>
                 <p><strong>Ticket Selection:</strong></p>
-                <img src="./assets/meus_ingressos_quantity.png" alt="home page image" width="300" height="" />
-                <p>Users select the type and quantity of desired tickets.</p>
+                <div class="img_left">
+                  <img src="./assets/meus_ingressos_quantity.png" alt="home page image" class="img-normal" />
+                  <p>Users select the type and quantity of desired tickets.</p>
+                </div>
               </li>
               <li>
                 <p><strong>Secure Payment:</strong></p>
-                <img src="./assets/meus_ingressos_payment.png" alt="home page image" width="300" height="" />
-                <p>Users make a secure payment using payment options such as credit cards or PayPal.</p>
+                <div class="img_right">
+                  <img src="./assets/meus_ingressos_payment.png" alt="home page image" class="img-normal" />
+                  <p>Users make a secure payment using payment options such as credit cards or PayPal.</p>
+                </div>
               </li>
               <li>
                 <p><strong>Confirmation and Delivery:</strong></p>
-                <img src="./assets/meus_ingressos_confirmation.png" alt="home page image" width="300" height="" />
-                <p>
-                  After completing the payment, tickets are electronically generated and delivered via email or made
-                  available for download in the user's account.
-                </p>
+                <div class="img_left">
+
+                  <img src="./assets/meus_ingressos_confirmation.png" alt="home page image" class="img-normal" />
+                  <p>
+                    After completing the payment, tickets are electronically generated and delivered via email or made
+                    available for download in the user's account.
+                  </p>
+                </div>
               </li>
               <li>
                 <strong>Integration with Portable Sales Machines:</strong>
@@ -348,12 +407,13 @@
               </li>
               <li>
                 <p><strong>Event Administration (Administrator Access):</strong></p>
-                <img src="./assets/meus_ingressos_login_area.png" alt="home page image" width="300" height="" />
-                <p>
-                  Administrators have access to a control panel to register new events, add information, and update
-                  ticket
-                  prices.
-                </p>
+                <div class="img_right">
+                  <img src="./assets/meus_ingressos_login_area.png" alt="home page image" class="img-normal" />
+                  <p>
+                    Administrators have access to a control panel to register new events, add information, and update
+                    ticket prices.
+                  </p>
+                </div>
               </li>
             </ol>
             <section>
@@ -402,42 +462,57 @@
           <ul>
             <li>
               <p><strong>Schedule Control:</strong></p>
-              <img src="./assets/barber_crm_schedule.png" alt="home page image" width="300" height="" />
-              <p>
-                Efficiently manage employee schedules, ensuring optimal coverage and
-                minimizing conflicts.
-              </p>
+              <div class="img_left">
+                <img src="./assets/barber_crm_schedule.png" alt="home page image" class="img-normal" />
+                <p>
+                  Efficiently manage employee schedules, ensuring optimal coverage and
+                  minimizing conflicts.
+                </p>
+              </div>
             </li>
             <li>
               <p><strong>Income Tracking:</strong></p>
-              <img src="./assets/baber_crm_home_logged_page.png" alt="home page image" width="300" height="" />
-              <p>Keep track of individual barber earnings and overall revenue.</p>
+              <div class="img_right">
+                <img src="./assets/baber_crm_home_logged_page.png" alt="home page image" class="img-normal" />
+                <p>Keep track of individual barber earnings and overall revenue.</p>
+              </div>
             </li>
             <li>
               <p><strong>Appointment Bookings:</strong></p>
-              <img src="./assets/barber_crm_appointment.png" alt="home page image" width="300" height="" />
-              <p>Allow clients to schedule appointments, edit existing bookings, and
-                create new ones.</p>
+              <div class="img_left">
+
+                <img src="./assets/barber_crm_appointment.png" alt="home page image" class="img-normal" />
+                <p>Allow clients to schedule appointments, edit existing bookings, and
+                  create new ones.</p>
+              </div>
             </li>
             <li>
               <p><strong>Client Management:</strong></p>
-              <img src="./assets/barber_crm_schedule_control.png" alt="home page image" width="300" height="" />
-              <p>Maintain a database of clients, including their preferences and
-                appointment history.</p>
+              <div class="img_right">
+
+                <img src="./assets/barber_crm_schedule_control.png" alt="home page image" class="img-normal" />
+                <p>Maintain a database of clients, including their preferences and
+                  appointment history.</p>
+              </div>
             </li>
             <li>
               <p><strong>Report Generation:</strong></p>
-              <img src="./assets/barber_crm_report.png" alt="home page image" width="300" height="" />
-              <p>
-                Generate reports for financial analysis, appointment history, and
-                employee performance.
-              </p>
+              <div class="img_left">
+                <img src="./assets/barber_crm_report.png" alt="home page image" class="img-normal" />
+                <p>
+                  Generate reports for financial analysis, appointment history, and
+                  employee performance.
+                </p>
+              </div>
             </li>
             <li>
               <p><strong>Multi-level Access Control:</strong></p>
-              <img src="./assets/barber_crm_schedule.png" alt="home page image" width="300" height="" />
-              <p>Implement role-based access control, granting barbers and
-                managers varying levels of access and responsibility.</p>
+              <div class="img_right">
+
+                <img src="./assets/barber_crm_schedule.png" alt="home page image" class="img-normal" />
+                <p>Implement role-based access control, granting barbers and
+                  managers varying levels of access and responsibility.</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -447,11 +522,13 @@
           <ol>
             <li>
               <p><strong>Intuitive Interface:</strong></p>
-              <img src="./assets/barber_crm_mobile.png" alt="home page image" width="300" height="" />
-              <p>
-                Designing a user-friendly and intuitive interface to allow barbers and managers to navigate seamlessly
-                through the application.
-              </p>
+              <div class="img_left">
+                <img src="./assets/barber_crm_mobile.png" alt="home page image" class="img-big img-normal" />
+                <p>
+                  Designing a user-friendly and intuitive interface to allow barbers and managers to navigate seamlessly
+                  through the application.
+                </p>
+              </div>
             </li>
             <li>
               <p><strong>Schedule Management:</strong></p>
@@ -516,56 +593,58 @@
 
         <section>
           <h2>Project Overview:</h2>
-          <img src="./assets/mockado_home_page.png" alt="home page image" width="300" height="" />
-
-          <p>
-            The Mockado Project is a dynamic initiative aimed at harnessing the capabilities of WSO2
-            APIs to create mocks and facilitate the needs of other companies and developers. As an integral part of the
-            project, my role involves diverse responsibilities, including the consumption of APIs, establishment of
-            robust authentication systems, creation of client layouts, and the meticulous cloning of pages to ensure
-            they are identical to the original product. The project places a strong emphasis on security, private route
-            management, and related tasks that contribute to the overall success of the endeavor.
-          </p>
+          <div class="img_right">
+            <img src="./assets/mockado_home_page.png" alt="home page image" class="img-small img-normal" />
+            <p>
+              The Mockado Project is a dynamic initiative aimed at harnessing the capabilities of WSO2
+              APIs to create mocks and facilitate the needs of other companies and developers. As an integral part of
+              the
+              project, my role involves diverse responsibilities, including the consumption of APIs, establishment of
+              robust authentication systems, creation of client layouts, and the meticulous cloning of pages to ensure
+              they are identical to the original product. The project places a strong emphasis on security, private
+              route
+              management, and related tasks that contribute to the overall success of the endeavor.
+            </p>
+          </div>
         </section>
 
         <section>
           <h2>Current Responsibilities:</h2>
-          <img src="./assets/mockado.png" alt="home page image" width="300" height="" />
-
-          <ul>
-            <li>
-              <p><strong>API Consumption:</strong></p>
-              <p> Actively interfacing with WSO2 APIs to access and utilize their functionality.
-              </p>
-            </li>
-            <li>
-              <p><strong>Authentication Systems:</strong></p>
-              <p>Developing secure authentication mechanisms to protect the
-                project's resources.</p>
-            </li>
-            <li>
-              <p><strong>Client Layout Production:</strong> </p>
-              <p>Designing and producing layouts tailored to the specific
-                needs and preferences of clients.</p>
-            </li>
-            <li><strong>
-                <p>Page Cloning:
+          <div class="img_left">
+            <img src="./assets/mockado.png" alt="home page image" class="img-normal" />
+            <ul>
+              <li>
+                <p><strong>API Consumption:</strong>Actively interfacing with WSO2 APIs to access and utilize their
+                  functionality.
                 </p>
-              </strong>
-              <p>Ensuring that cloned pages replicate the original product in both
+              </li>
+              <li>
+                <p><strong>Authentication Systems:</strong> Developing secure authentication mechanisms to protect the
+                  project's resources.</p>
+              </li>
+              <li>
+                <p><strong>Client Layout Production:</strong>
+                  Designing and producing layouts tailored to the specific
+                  needs and preferences of clients.</p>
+              </li>
+              <li><strong>
+                  <p>Page Cloning:
+                </strong>
+                Ensuring that cloned pages replicate the original product in both
                 functionality and appearance.</p>
-            </li>
-            <li>
-              <p><strong>Security Measures:</strong></p>
-              <p>Implementing robust security measures to safeguard sensitive data
-                and resources.</p>
-            </li>
-            <li>
-              <p><strong>Private Route Management:</strong></p>
-              <p>Managing private routes to control access to critical
-                components of the project.</p>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <p><strong>Security Measures:</strong>
+                  Implementing robust security measures to safeguard sensitive data
+                  and resources.</p>
+              </li>
+              <li>
+                <p><strong>Private Route Management:</strong>
+                  Managing private routes to control access to critical
+                  components of the project.</p>
+              </li>
+            </ul>
+          </div>
           <section>
             <h2>UX Challenges:</h2>
             <ol>
@@ -601,36 +680,58 @@
     </div>
   </section>
 
-  <section id="contato">
-    <h2>Contact</h2>
+  <section id="contact">
     <p>
       Ways to find me:
-    <p>
-      Email:
     </p>
-    <a target="_blank" href="mailto:guilherme.g.senci@gmail.com">guilherme.g.senci@gmail.com</a>
-    <p>Mobile:</p>
-    +5519993741844
-    <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1"> - [icone] WhatsApp</a>
-    <p>Social media:</p>
-    <p>GitHub:
-      <a target="_blank" href="https://github.com/guilhermesenci"> [icone] guilhermesenci</a>
-    </p>
-    <p>Linkedin:
-      <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/">[icone] guilhermesenci</a>
-    </p>
-    <p>Instagram:
-      <a target="_blank" href="https://www.instagram.com/guilherme_senci/">[icone] @guilherme_senci</a>
-    </p>
-    </p>
+    <div class="contact">
+      <div>
+        <p>
+          Email:
+          <a target="_blank" href="mailto:guilherme.g.senci@gmail.com" class="link_style">
+            <img src="./assets/icons-gmall.png" alt="icone github" class="icon" />
+            guilherme.g.senci@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <p>Mobile:
+          <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1" class="link_style">
+            <img src="./assets/icons-whatsapp.png" alt="icone github" class="icon" />
+            <span>+5519993741844</span>
+            WhatsApp</a>
+        </p>
+      </div>
+      <div>
+        <p>GitHub:
+          <a target="_blank" href="https://github.com/guilhermesenci" class="link_style">
+            <img src="./assets//icons-github.png" alt="icone github" class="icon" />
+            guilhermesenci</a>
+        </p>
+      </div>
+      <div>
+        <p>Linkedin:
+          <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/" class="link_style">
+            <img src="./assets/icons-linkedin.png" alt="icone github" class="icon" />
+            guilhermesenci</a>
+        </p>
+      </div>
+      <div>
+        <p>Instagram:
+          <a target="_blank" href="https://www.instagram.com/guilherme_senci/" class="link_style">
+            <img src="./assets/icons-instagram.png" alt="icone github" class="icon" />
+            @guilherme_senci</a>
+        </p>
+      </div>
+    </div>
+
   </section>
 
   <div>
     <a href="#topo" class="voltar-ao-topo">Back to top</a>
   </div>
 
-  <footer>
-    <p>&copy; 2023 Guilherme Senci</p>
+  <footer class="footer">
+    <span>&copy; 2023 Guilherme Senci</span>
   </footer>
   <script src="./script.js"></script>
 </body>
