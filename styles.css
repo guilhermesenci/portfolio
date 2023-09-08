@@ -135,11 +135,6 @@ body {
   justify-content: center;
 }
 
-.meus_ingressos p {
-  margin: 0;
-  width: auto;
-}
-
 .img_left {
   display: flex;
   flex-direction: row;
@@ -287,6 +282,12 @@ p strong {
     flex-direction: column;
     align-items: center;
   }
+
+  .img-normal {
+    width: 80%;
+    height: auto;
+  }
+
   .desktop {
     display: none;
   }
