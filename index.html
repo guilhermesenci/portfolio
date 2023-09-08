@@ -10,12 +10,13 @@
 </head>
 
 <body>
+  <!-- header -->
   <div class="header">
-    <span class="desktop">Guilherme Senci</span>
-    <span class="mobile">GS</span>
+    <h3 class="desktop">Guilherme Senci</h3>
+    <h3 class="mobile">GS</h3>
     <nav class="navbar_about desktop">
       <ul class="nav_itens">
-        <li><a href="#about">About me</a></li>
+        <li><a href="#topo">About me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -50,7 +51,9 @@
       </ul>
     </nav>
   </div>
+
   <div id="topo"></div>
+  <!-- navbar -->
   <div class="container desktop">
     <section id="about" class="bio">
       <div class="pic_container">
@@ -111,186 +114,196 @@
 
   </div>
 
-  <section>
-    <h1>Projects</h1>
-    <nav class="navbar_about nav_projects">
-      <ul class="nav_itens">
-        <li><a href="#peg_volta">Peg de Volta</a></li>
-        <li><a href="#talkproccess">Talkproccess</a></li>
-        <li><a href="#rick_morty">Rick & Morty</a></li>
-        <li><a href="#meus_ingressos">Meus Ingressos</a></li>
-        <li><a href="#barber_crm">Barber CRM</a></li>
-        <li><a href="#mockado">Mockado</a></li>
-      </ul>
-    </nav>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="peg_volta" id="peg_volta">
-      <h2>
-        "Peg de Volta" - FGTS Credit Allocation:
-      </h2>
-      <p>
-        Collaborated on a web-based application to facilitate FGTS-based credit allocation to clients during
-        the pandemic. Challenges: Completing unfinished layouts and pages, form creation, email system integration.
-        Working with the admin back-office environment.
-        <span>
-          <strong>Technologies:</strong> HTML, CSS, JavaScript, Redux, Axios.
-        </span>
-      </p>
-    </div>
-    <div class="talkproccess" id="talkproccess">
-      <h2>
-        TalkProccess - Employee Training and Management:
-      </h2>
-      <div class="img_left">
-        <img src="./assets/talkproccess_mobile.png" alt="home page image" class="img-normal" />
-        <p>
-          Enhanced a SaaS platform for internal process management, training, and external client onboarding.
-          Challenges: Integrating new features, such as knowledge testing and virtual training modules. Maintaining
-          compatibility with mobile app counterparts.
-          <span>
-            <strong>Technologies:</strong> Backbone, CoffeeScript, React, Redux, MySQL, Flutter.
-          </span>
-        </p>
+  <div>
+    <!-- bio area -->
+    <section>
+      <h1>Projects</h1>
+      <div class="content">
+        <nav class="navbar_about nav_projects">
+          <ul class="nav_itens">
+            <li><a href="#talkproccess">Talkproccess</a></li>
+            <li><a href="#rick_morty">Rick & Morty</a></li>
+            <li><a href="#barber_crm">Barber CRM</a></li>
+            <li><a href="#mockado">Mockado</a></li>
+            <li><a href="#meus_ingressos">Meus Ingressos</a></li>
+            <li><a href="#peg_volta">Peg de Volta</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="rick_morty" id="rick_morty">
-      <section>
-        <h2>Rick and Morty Character Explorer:</h2>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="talkproccess" id="talkproccess">
+        <h2>
+          TalkProccess - Employee Training and Management:
+        </h2>
         <div class="img_left">
-          <img src="./assets/rick_morty.png" alt="home image" class="img-normal" />
+          <img src="./assets/talkproccess_mobile.png" alt="home page image" class="img-normal" />
           <p>
-            Developed a responsive web app with React to explore characters from the "Rick and Morty" series.
-            Challenges: Integrating multiple API endpoints for characters, episodes, and worlds. Achieving seamless
-            asynchronous rendering, loading, and pagination.
+            Enhanced a SaaS platform for internal process management, training, and external client onboarding.
+            Challenges: Integrating new features, such as knowledge testing and virtual training modules. Maintaining
+            compatibility with mobile app counterparts.
             <span>
-              <strong>Technologies:</strong> React, Redux, Axios, Responsive Design.
+              <strong>Technologies:</strong> Backbone, CoffeeScript, React, Redux, HTML, LESS/SASS, MySQL.
             </span>
           </p>
         </div>
-      </section>
-    </div>
-    <div class="meus_ingressos" id="meus_ingressos">
-      <h2>Meus Ingressos - Event Ticket Sales:</h2>
-      <div class="img_left">
-        <img src="./assets/meus_ingressos_home.png" alt="home page image" class="img-normal" />
-        <p>
-          Created a responsive ticket sales platform for events like concerts and stand-up shows.
-          Challenges: Implementing user-friendly UX for event selection and ticket purchasing. Integrating mobile POS
-          systems for vendors.
-          <span><strong>Technologies:</strong> React, Redux, Axios, CSS Modules, Saas.</span>
-        </p>
       </div>
-    </div>
-    <div class="barber_crm" id="barber_crm">
-      <h2>Barbershop Management System:</h2>
-      <div class="img_left">
+      <div class="rick_morty" id="rick_morty">
+        <section>
+          <h2>Rick and Morty Character Explorer:</h2>
+          <div class="img_left">
+            <img src="./assets/rick_morty.png" alt="home image" class="img-normal" />
+            <p>
+              Developed a responsive web app with React to explore characters from the "Rick and Morty" series.
+              Challenges: Integrating multiple API endpoints for characters, episodes, and worlds. Achieving seamless
+              asynchronous rendering, loading, and pagination.
+              <span>
+                <strong>Technologies:</strong> React, Redux, Axios, Responsive Design.
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="barber_crm" id="barber_crm">
+        <h2>Barbershop Management System:</h2>
+        <div class="img_left">
+          <img src="./assets/barber_crm_mobile.png" alt="home page image" class="img-big img-normal" width="370" />
+          <p>
+            Developed an all-in-one solution for managing barbershop operations, appointments, and client data.
+            Challenges: Designing an intuitive user interface for scheduling and reporting. Ensuring secure access
+            levels
+            for barbers and managers.
+            <span>
+              <strong>Technologies:</strong> React, Axios, Redux, Tailwind CSS.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="mockado" id="mockado">
+        <h2>
+          API Mock Generation with WSO2:
+        </h2>
+        <div class="img_left">
+          <img src="./assets/mockado.png" alt="home page image" class="img-normal" />
+          <p>
+            Contributed to a project that utilized WSO2 APIs to generate mock endpoints for developers and
+            businesses, with a user interface built using React, Redux, and Next.js.
+            Challenges: Consuming and securing APIs, replicating routes and pages for identical user experiences.
+            <span>
+              <strong>Technologies:</strong> React, Redux, Next.js, WSO2, API Consumption, Security, Route Security.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="meus_ingressos" id="meus_ingressos">
+        <h2>Meus Ingressos - Event Ticket Sales:</h2>
+        <div class="img_left">
+          <img src="./assets/meus_ingressos_home.png" alt="home page image" class="img-normal" />
+          <p>
+            Created a responsive ticket sales platform for events like concerts and stand-up shows.
+            Challenges: Implementing user-friendly UX for event selection and ticket purchasing. Integrating mobile POS
+            systems for vendors.
+            <span><strong>Technologies:</strong> React, Redux, Axios, CSS Modules, Saas.</span>
+          </p>
+        </div>
+      </div>
 
-        <img src="./assets/barber_crm_mobile.png" alt="home page image" class="img-big img-normal" />
+      <div class="peg_volta" id="peg_volta">
+        <h2>
+          "Peg de Volta" - FGTS Credit Allocation:
+        </h2>
         <p>
-          Developed an all-in-one solution for managing barbershop operations, appointments, and client data.
-          Challenges: Designing an intuitive user interface for scheduling and reporting. Ensuring secure access levels
-          for barbers and managers.
+          Collaborated on a web-based application to facilitate FGTS-based credit allocation to clients during
+          the pandemic. Challenges: Completing unfinished layouts and pages, form creation, email system integration.
+          Working with the admin back-office environment.
           <span>
-            <strong>Technologies:</strong> React, Axios, Redux, Tailwind CSS.
+            <strong>Technologies:</strong> HTML, CSS, JavaScript, Redux, Axios.
           </span>
         </p>
       </div>
 
-    </div>
-    <div class="mockado" id="mockado">
-      <h2>
-        API Mock Generation with WSO2:
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="find_me">
+        Ways to find me:
       </h2>
-      <div class="img_left">
-        <img src="./assets/mockado.png" alt="home page image" class="img-normal" />
-        <p>
-          Contributed to a project that utilized WSO2 APIs to generate mock endpoints for developers and
-          businesses, with a user interface built using React, Redux, and Next.js.
-          Challenges: Consuming and securing APIs, replicating routes and pages for identical user experiences.
-          <span>
-            <strong>Technologies:</strong> React, Redux, Next.js, WSO2, API Consumption, Security, Route Cloning,
-            Front-end Technologies.
-          </span>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="find_me">
-      Ways to find me:
-    </h2>
-    <div class="contact">
-      <div>
-        <p class="desktop">
-          <a target="_blank" href="mailto:guilherme.g.senci@gmail.com" class="link_style bottom_icon">
-            <img src="./assets/icons-gmall.png" alt="icone github" class="icon" />
-          </a>
-          guilherme.g.senci@gmail.com
-        </p>
-        <a target="_blank" href="mailto:guilherme.g.senci@gmail.com" class="link_style mobile">
-          <img src="./assets/icons-gmall.png" alt="icone github" class="icon" /></a>
-      </div>
-      <div>
-        <p class="desktop">
-          <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1" class="link_style bottom_icon">
+      <div class="contact">
+        <div>
+          <p class="desktop">
+            <a target="_blank" href="mailto:guilherme.g.senci@gmail.com" class="link_style bottom_icon">
+              <img src="./assets/icons-gmall.png" alt="icone github" class="icon" />
+            </a>
+            guilherme.g.senci@gmail.com
+          </p>
+          <a target="_blank" href="mailto:guilherme.g.senci@gmail.com" class="link_style mobile">
+            <img src="./assets/icons-gmall.png" alt="icone github" class="icon" /></a>
+        </div>
+        <div>
+          <p class="desktop">
+            <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1" class="link_style bottom_icon">
+              <img src="./assets/icons-whatsapp.png" alt="icone github" class="icon" />
+            </a>
+            +5519993741844
+          </p>
+          <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1" class="link_style mobile">
             <img src="./assets/icons-whatsapp.png" alt="icone github" class="icon" />
           </a>
-          +5519993741844
-        </p>
-        <a target="_blank" href="https://wa.me/qr/C462T5TYGG6ZL1" class="link_style mobile">
-          <img src="./assets/icons-whatsapp.png" alt="icone github" class="icon" />
-        </a>
-      </div>
-      <div>
-        <p class="desktop">
-          <a target="_blank" href="https://github.com/guilhermesenci" class="link_style bottom_icon">
+        </div>
+        <div>
+          <p class="desktop">
+            <a target="_blank" href="https://github.com/guilhermesenci" class="link_style bottom_icon">
+              <img src="./assets//icons-github.png" alt="icone github" class="icon" />
+            </a>
+            guilhermesenci
+          </p>
+          <a target="_blank" href="https://github.com/guilhermesenci" class="link_style mobile">
             <img src="./assets//icons-github.png" alt="icone github" class="icon" />
           </a>
-          guilhermesenci
-        </p>
-        <a target="_blank" href="https://github.com/guilhermesenci" class="link_style mobile">
-          <img src="./assets//icons-github.png" alt="icone github" class="icon" />
-        </a>
-      </div>
-      <div>
-        <p class="desktop">
-          <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/" class="link_style bottom_icon">
+        </div>
+        <div>
+          <p class="desktop">
+            <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/" class="link_style bottom_icon">
+              <img src="./assets/icons-linkedin.png" alt="icone github" class="icon" />
+            </a>
+            guilhermesenci
+          </p>
+          <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/" class="link_style mobile">
             <img src="./assets/icons-linkedin.png" alt="icone github" class="icon" />
           </a>
-          guilhermesenci
-        </p>
-        <a target="_blank" href="https://www.linkedin.com/in/guilhermesenci/" class="link_style mobile">
-          <img src="./assets/icons-linkedin.png" alt="icone github" class="icon" />
-        </a>
 
-      </div>
-      <div>
-        <p class="desktop">
-          <a target="_blank" href="https://www.instagram.com/guilherme_senci/" class="link_style bottom_icon">
+        </div>
+        <div>
+          <p class="desktop">
+            <a target="_blank" href="https://www.instagram.com/guilherme_senci/" class="link_style bottom_icon">
+              <img src="./assets/icons-instagram.png" alt="icone github" class="icon" />
+            </a>
+            @guilherme_senci
+          </p>
+          <a target="_blank" href="https://www.instagram.com/guilherme_senci/" class="link_style mobile">
             <img src="./assets/icons-instagram.png" alt="icone github" class="icon" />
           </a>
-          @guilherme_senci
-        </p>
-        <a target="_blank" href="https://www.instagram.com/guilherme_senci/" class="link_style mobile">
-          <img src="./assets/icons-instagram.png" alt="icone github" class="icon" />
-        </a>
+        </div>
       </div>
-    </div>
 
-  </section>
-
+    </section>
+  </div>
+  <!-- back to top button -->
   <div>
     <a href="#topo" class="voltar-ao-topo">
       <img src="./assets/icons8-para-cima-com-quadrado-100.png" alt="arrow side up" class="up_arrow">
     </a>
   </div>
 
+  <!-- footer -->
   <footer class="footer">
     <span>&copy; 2023 Guilherme Senci</span>
   </footer>
+
+  <!-- scripts js -->
   <script src="./script.js"></script>
 </body>
 
