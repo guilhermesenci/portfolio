@@ -23,6 +23,7 @@ body {
   left: 0;
   height: 60px;
   width: 100%;
+  padding-right: 80px;
   background-color: #363636;
   box-shadow: 0 0px 8px rgba(255, 255, 255, 0.3);
   display: flex;
@@ -35,8 +36,8 @@ body {
 .title {
   display: flex;
   width: 100%;
-  flex-direction: column; /* Alterado para column para centralizar o conteúdo verticalmente */
-  align-items: center; /* Centraliza o título horizontalmente */
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .background {
@@ -47,11 +48,10 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
+  margin: 10px 0 20px 0;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,15 +83,14 @@ body {
 }
 
 .nav_projects {
-  margin: 60px 0;
+  margin: 20px 0 60px 0;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  align-items: center; /* Centraliza os itens horizontalmente */
 }
 
 .nav_itens {
   display: flex;
-  flex-direction: row; /* Alterado para column para empilhar os itens verticalmente */
+  flex-direction: row;
   gap: 12px;
   color: #fff;
   text-decoration: none;
@@ -131,14 +130,14 @@ body {
   height: 100%;
   flex-wrap: wrap;
   gap: 120px;
-  justify-content: center; /* Centraliza os projetos horizontalmente */
+  justify-content: center; 
 }
 
 .img_left {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center; /* Centraliza as imagens horizontalmente */
+  justify-content: center; 
 }
 
 .img-normal {
@@ -151,17 +150,20 @@ body {
 }
 
 .img-normal:hover {
-  transform: scale(1.1); /* Ajustado o valor para uma escala mais suave */
+  transform: scale(2); 
   box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1);
-  z-index: 1; /* Ajustado o valor para estar acima dos outros elementos */
+  z-index: 1; 
 }
 
 .img-big:hover {
-  transform: scale(1.1); /* Ajustado o valor para uma escala mais suave */
+  transform: scale(1.5); 
   box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1);
-  z-index: 1; /* Ajustado o valor para estar acima dos outros elementos */
+  z-index: 1; 
 }
 
+h2 {
+  margin-bottom: 20px;
+}
 p {
   font-size: 20px;
   max-width: 500px;
@@ -214,7 +216,7 @@ p {
   z-index: 999999;
   align-items: end;
   padding-right: 50px;
-  text-align: right; /* Alinha o texto à direita */
+  text-align: right; 
 }
 
 .pic_container {
@@ -228,13 +230,20 @@ p {
   display: none;
 }
 
+p strong {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   * {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    align-items: center; /* Centraliza todos os itens verticalmente */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    align-items: center;  
+    text-align: center; 
+  }
+
+  .navbar_about {
+    gap: 5px;
   }
 
   .img_left {
@@ -269,4 +278,12 @@ p {
   .bio {
     margin: 10px 0;
   }
+  .img-normal:hover {
+    transform: scale(1.5); 
+  }
+  
+  .img-big:hover {
+    transform: scale(1.2); 
+  }
+  
 }
