@@ -11,6 +11,8 @@
   scroll-behavior: smooth;
   color: #fff;
   text-align: justify;
+  margin: 0 auto;
+
 }
 
 body {
@@ -23,7 +25,6 @@ body {
   left: 0;
   height: 60px;
   width: 100%;
-  padding-right: 80px;
   background-color: #363636;
   box-shadow: 0 0px 8px rgba(255, 255, 255, 0.3);
   display: flex;
@@ -35,9 +36,8 @@ body {
 
 .title {
   display: flex;
-  width: 100%;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .background {
@@ -130,14 +130,14 @@ body {
   height: 100%;
   flex-wrap: wrap;
   gap: 120px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .img_left {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .img-normal {
@@ -150,15 +150,15 @@ body {
 }
 
 .img-normal:hover {
-  transform: scale(2); 
+  transform: scale(2);
   box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .img-big:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
   box-shadow: 0 4px 18px rgba(255, 255, 255, 0.1);
-  z-index: 1; 
+  z-index: 1;
 }
 
 h2 {
@@ -216,7 +216,7 @@ p {
   z-index: 999999;
   align-items: end;
   padding-right: 50px;
-  text-align: right; 
+  text-align: right;
 }
 
 .pic_container {
@@ -234,12 +234,16 @@ p strong {
   margin-top: 10px;
 }
 
+.bottom_icon {
+  margin-bottom: 12px;
+}
+
 @media screen and (max-width: 768px) {
   * {
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    text-align: center; 
+    align-items: center;
+    text-align: center;
   }
 
   .navbar_about {
@@ -279,11 +283,10 @@ p strong {
     margin: 10px 0;
   }
   .img-normal:hover {
-    transform: scale(1.5); 
+    transform: scale(1.5);
   }
-  
+
   .img-big:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
   }
-  
 }
