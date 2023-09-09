@@ -7,62 +7,55 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Estilização da barra de rolagem */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-/* Estilização do controle deslizante (thumb) */
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 
-/* Estilização quando o controle deslizante (thumb) está sendo arrastado */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilização da trilha da barra de rolagem (background da barra) */
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
-/* Estilização quando a trilha da barra de rolagem está sendo hover */
 ::-webkit-scrollbar-track:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para o cursor */
-.cursor {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #ff5733; /* Cor do cursor */
-  border-radius: 50%; /* Forma circular */
-  pointer-events: none; /* Permite que o cursor real passe por cima */
-  transform: translate(-50%, -50%);
-  transition: all 0.1s ease; /* Transição suave para o tamanho */
-  z-index: 9999; /* Coloca o cursor acima de todos os elementos */
+body {
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilo para o rastro */
-.cursor-trail {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: transparent; /* Cor de fundo transparente */
-  border-radius: 50%; /* Forma circular */
-  pointer-events: none; /* Permite que o cursor real passe por cima */
-  transition: background-color 0.3s ease; /* Transição suave para a cor */
-  z-index: 9998; /* Coloca o rastro logo abaixo do cursor */
+/* dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode a {
+  color: #bbb;
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: #fff;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+}
+
+body.dark-mode .underline {
+  border-color: #fff;
 }
 
 /* left side */
@@ -111,6 +104,71 @@
   color: #fff;
 }
 
+.button-dark-mode {
+  width: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 .social-media {
   display: flex;
   flex-direction: column;
@@ -149,6 +207,9 @@
   width: 50px;
   height: 50px;
   opacity: 0.5;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1px;
 }
 
 .icon:hover {
@@ -159,8 +220,8 @@
 .right {
   width: 60%;
   padding: 100px 300px 100px 100px;
-  overflow-y: auto; /* Adiciona uma barra de rolagem no lado direito, se necessário */
-  position: absolute; /* Para permitir que o lado direito ocupe o espaço restante */
+  overflow-y: auto;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -172,7 +233,6 @@
 
 .bio,
 .text-box {
-  color: #000;
   text-align: justify;
   height: auto;
 }
@@ -251,7 +311,7 @@
   flex-direction: row-reverse;
 }
 
-.link-all-projects a {
+.item-all-project {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -264,7 +324,8 @@
 }
 
 .link-all:hover a {
-  background-color: #ccc;
+  background-color: #666;
+  color: #fff;
 }
 
 .underline {
@@ -281,6 +342,16 @@
 
 .find-me {
   margin: 20px 0;
+}
+
+.dark-mode {
+  background-color: #333; /* Cor de fundo escura quando o Dark Mode está ativado */
+  color: #fff; /* Cor do texto em modo escuro */
+}
+
+/* Estilo para links no modo escuro */
+.dark-mode-link {
+  color: #bb86fc; /* Cor dos links em modo escuro */
 }
 
 @media screen and (max-width: 1444px) {
