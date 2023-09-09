@@ -146,8 +146,13 @@
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 /* right side */
@@ -274,6 +279,10 @@
   gap: 40px;
 }
 
+.find-me {
+  margin: 20px 0;
+}
+
 @media screen and (max-width: 1444px) {
   .left {
     width: auto;
@@ -298,7 +307,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
   }
 
   .contact-area {
@@ -325,7 +333,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
     overflow: visible;
     top: 60%;
   }
