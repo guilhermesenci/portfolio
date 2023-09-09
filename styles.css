@@ -316,6 +316,7 @@
 
   .contact-item {
     display: flex;
+    width: auto;
     align-items: center;
     justify-content: center;
   }
@@ -335,7 +336,7 @@
     width: 100%;
     padding: 0 20px 0 20px;
     overflow: visible;
-    top: 60%;
+    top: 500px;
   }
 
   .nav-menu {
@@ -343,7 +344,7 @@
   }
 
   .contact-area {
-    justify-content: space-around; /* Espaçamento uniforme entre os ícones de mídia social */
+    justify-content: center;
   }
 
   .experiences-box {
