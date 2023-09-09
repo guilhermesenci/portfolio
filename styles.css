@@ -36,17 +36,12 @@ body {
 
 /* dark mode */
 body.dark-mode {
-  background-color: #333;
+  background-color: #111;
   color: #fff;
 }
 
 body.dark-mode a {
   color: #bbb;
-}
-
-body.dark-mode button {
-  background-color: #444;
-  color: #fff;
 }
 
 .container {
@@ -56,6 +51,22 @@ body.dark-mode button {
 
 body.dark-mode .underline {
   border-color: #fff;
+}
+
+body.dark-mode .small-icon {
+  display: none;
+}
+
+.small-icon-white {
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+
+body.dark-mode .small-icon-white {
+  display: inherit !important;
+  width: 15px;
+  height: 15px;
 }
 
 /* left side */
@@ -148,11 +159,11 @@ body.dark-mode .underline {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: rgba(105, 255, 255, 0.6);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px rgba(105, 255, 255, 0.6);
 }
 
 input:checked + .slider:before {
@@ -254,6 +265,10 @@ input:checked + .slider:before {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode .experiences-box:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .experiences-box-content {
   display: flex;
   flex-direction: column;
@@ -286,6 +301,12 @@ input:checked + .slider:before {
   padding: 8px;
   color: #fff;
 }
+
+body.dark-mode .tec-item {
+  background-color: rgba(105, 255, 255, 0.6);
+
+}
+
 .external-link {
   display: flex;
   align-items: center;
@@ -347,11 +368,6 @@ input:checked + .slider:before {
 .dark-mode {
   background-color: #333; /* Cor de fundo escura quando o Dark Mode está ativado */
   color: #fff; /* Cor do texto em modo escuro */
-}
-
-/* Estilo para links no modo escuro */
-.dark-mode-link {
-  color: #bb86fc; /* Cor dos links em modo escuro */
 }
 
 @media screen and (max-width: 1444px) {
