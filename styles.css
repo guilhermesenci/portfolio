@@ -35,6 +35,31 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo para o cursor */
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff5733; /* Cor do cursor */
+  border-radius: 50%; /* Forma circular */
+  pointer-events: none; /* Permite que o cursor real passe por cima */
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease; /* Transição suave para o tamanho */
+  z-index: 9999; /* Coloca o cursor acima de todos os elementos */
+}
+
+/* Estilo para o rastro */
+.cursor-trail {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent; /* Cor de fundo transparente */
+  border-radius: 50%; /* Forma circular */
+  pointer-events: none; /* Permite que o cursor real passe por cima */
+  transition: background-color 0.3s ease; /* Transição suave para a cor */
+  z-index: 9998; /* Coloca o rastro logo abaixo do cursor */
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -244,4 +269,93 @@
 
 .conclusion {
   margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1444px) {
+  .left {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .find-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .contact-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio {
+    padding: 0 20px 0 0;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 0 20px;
+    overflow: visible;
+    top: 60%;
+  }
+
+  .nav-menu {
+    text-align: center; /* Centralizado o texto do menu */
+  }
+
+  .contact-area {
+    justify-content: space-around; /* Espaçamento uniforme entre os ícones de mídia social */
+  }
+
+  .experiences-box {
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .period {
+    width: auto;
+  }
+
+  .conclusion {
+    text-align: justify;
+    padding: 0 10px 20px 0;
+  }
 }
