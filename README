@@ -1,0 +1,66 @@
+# Personal Portfolio Website
+
+![Project Screenshot](./assets/portfolio.png)
+
+## Overview
+
+This is my personal portfolio website, showcasing my skills, experiences, and projects as a front-end developer. The website is designed to provide an overview of my journey as a developer and to display my latest projects.
+
+## Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+
+## Features
+
+- Responsive design for various screen sizes and devices.
+- Detailed sections for personal information, experiences, and projects.
+- Interactive navigation menu for easy access to different sections.
+- Smooth scrolling behavior for a seamless user experience.
+- Stylish scrollbar customization for webkit-based browsers.
+- Bio section with a brief overview of my journey and skills.
+- Experience section with details of my work experiences and technologies used.
+- Projects section showcasing my latest projects with descriptions and links.
+- External links to my email and social media profiles.
+- Readable and clean code with organized CSS styles.
+
+## Demo
+
+You can view a live demo of the website here: [Personal Portfolio Demo](https://guilhermesenci.github.io/portfolio/)
+
+## Installation
+
+1. Clone this repository to your local machine using `git clone https://github.com/guilhermesenci/portfolio.git`
+2. Navigate to the project directory using `cd your-portfolio`
+
+## Usage
+
+To use this template for your own portfolio website:
+
+1. Replace the content in the HTML file with your own information.
+2. Customize the styles in the CSS file to match your design preferences.
+3. Add your own project details and images to the HTML file.
+4. Modify the navigation links to point to your website sections.
+5. Update external links to your own profiles and contact information.
+
+Feel free to adapt the template to your needs and make it unique to showcase your skills and projects.
+
+## Technologies
+
+This project uses the following technologies:
+
+- HTML
+- CSS
+- JavaScript
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project or have suggestions for improvements, please create an issue or submit a pull request.
+
+---
+
+Thank you for visiting my portfolio website! If you have any questions or would like to get in touch, please feel free to contact me through my [email](mailto:guilherme.g.senci@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/guilhermesenci/).
