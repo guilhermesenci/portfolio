@@ -72,7 +72,7 @@ body.dark-mode .small-icon-white {
 /* left side */
 .left {
   width: 40%;
-  padding: 100px 50px 100px 300px;
+  padding: 10%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -230,7 +230,7 @@ input:checked + .slider:before {
 /* right side */
 .right {
   width: 60%;
-  padding: 100px 300px 100px 100px;
+  padding: 10%;
   overflow-y: auto;
   position: absolute;
   top: 0;
@@ -304,7 +304,6 @@ body.dark-mode .experiences-box:hover {
 
 body.dark-mode .tec-item {
   background-color: rgba(105, 255, 255, 0.6);
-
 }
 
 .external-link {
@@ -355,7 +354,7 @@ body.dark-mode .tec-item {
 }
 
 .conclusion {
-  margin: 150px 0 0 0;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -366,8 +365,8 @@ body.dark-mode .tec-item {
 }
 
 .dark-mode {
-  background-color: #333; /* Cor de fundo escura quando o Dark Mode está ativado */
-  color: #fff; /* Cor do texto em modo escuro */
+  background-color: #333;
+  color: #fff;
 }
 
 @media screen and (max-width: 1444px) {
@@ -375,6 +374,7 @@ body.dark-mode .tec-item {
     width: auto;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .container {
     display: flex;
@@ -427,7 +427,7 @@ body.dark-mode .tec-item {
   }
 
   .nav-menu {
-    text-align: center; /* Centralizado o texto do menu */
+    text-align: center;
   }
 
   .contact-area {
@@ -443,7 +443,6 @@ body.dark-mode .tec-item {
   .mobile {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .period {
